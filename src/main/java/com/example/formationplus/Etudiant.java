@@ -1,6 +1,7 @@
 ackage com.exemple.formationPlus;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
@@ -18,6 +19,7 @@ public class Etudiant {
 
     // Jointure avec la convention
     private Convention conventionEtudiant;
+    private Long id;
 
     public Etudiant() {
 
@@ -78,7 +80,7 @@ public class Etudiant {
         return conventionEtudiant;
     }
 
-    public void setConventionEtudiant(Convention conventionEtudiant) {
+    public void setConventionEtudiant(com.exemple.formationPlus.Convention conventionEtudiant) {
         this.conventionEtudiant = conventionEtudiant;
     }
 
@@ -91,6 +93,15 @@ public class Etudiant {
                 + nomEtudiant + ",prenom="
                 + prenomEtudiant +", mail="
                 + mailEtudiant + "]";
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    @Id
+    public Long getId() {
+        return id;
     }
 }
 
