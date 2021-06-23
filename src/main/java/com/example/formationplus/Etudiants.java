@@ -1,4 +1,4 @@
-package com.example.formationplusdemo;
+package com.example.formationplus;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.example.formationplusdemo;
+package com.example.formationplus;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ public class HomeController {
     @GetMapping("/")
     public String homePage()
     {
-        return "Welcome to my app";
+        return "Bienvenue sur FormationPlus";
     }
 
 }
